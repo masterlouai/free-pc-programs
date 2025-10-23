@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Download Home Page</title>
+  <meta name="description" content="Download all your favorite Windows applications from AppHub.">
+  <style>
+    :root {
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7;
+      --glass:rgba(255,255,255,0.03);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071025 0%, #081428 100%);
+      color: #e6eef6;
+      min-height: 100vh;
+      padding: 32px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin: 6px 0 0;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 6px 40px rgba(2,6,23,0.7);
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0ea5a4, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    h2 { margin: 0 0 8px; }
+
+    p.desc {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #10b981, #06b6d4);
+      color: #042022;
+      border: 0;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .btn span.meta {
+      font-size: 12px;
+      color: #042022;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Download Home Page</h1>
+    <p class="lead">Download Windows versions of all your favorite applications. Each package is safe, signed, and verified.</p>
+  </header>
+
+  <main class="apps">
+    <!-- Minecraft -->
+    <div class="card">
+      <div class="logo">MA</div>
+      <h2>Minecraft</h2>
+      <p class="desc">Poly MC launcher.</p>
+      <div class="btns">
+        <!-- Redirect to download.html -->
+        <a class="btn" href="download.html?file=minecraft.exe">
+          Download for Windows <span class="meta">.exe</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Capcut -->
+    <div class="card">
+      <div class="logo">CA</div>
+      <h2>Capcut</h2>
+      <p class="desc">The best beginner editing software.</p>
+      <div class="btns">
+        <!-- Redirect to download.html -->
+        <a class="btn" href="download.html?file=capcut.exe">
+          Download for Windows <span class="meta">.exe</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    2025 Built by HL.
+  </footer>
+</body>
+</html>
