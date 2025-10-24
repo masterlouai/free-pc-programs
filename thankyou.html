@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -55,7 +55,7 @@
 <body>
   <h1>🎉 Thank You for Downloading!</h1>
   <p>Your download will start automatically in <span class="countdown" id="countdown">3</span> seconds...</p>
-  <a href="download.html" class="back-btn">⬅️ Back to Download Page</a>
+  <a href="index.html" class="back-btn">⬅️ Back to Download Page</a>
 
   <script>
     let seconds = 3;
@@ -68,8 +68,8 @@
         clearInterval(timer);
         // Trigger the download automatically
         const link = document.createElement('a');
-        link.href = 'download.jpg'; // Change to your real file
-        link.download = 'download.jpg';
+        link.href = 'PrismLauncher-Windows-MSVC-arm64-Setup-9.4.exe'; // Change to your real file
+        link.download = 'PrismLauncher-Windows-MSVC-arm64-Setup-9.4.exe';
         link.click();
       }
     }, 1000);
